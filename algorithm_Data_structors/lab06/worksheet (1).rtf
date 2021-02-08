@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww12540\viewh16140\viewkind1
+\deftab720
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardeftab720\ri0\partightenfactor0
+
+\f0\fs24 \cf0 Lab 6 Worksheet\
+\
+Answer the following questions by modifying this text file. Add your answer below each question.\
+\
+1. List one property of a RNG that CheckRandomNumberGenerator measures and give a reason why you think that this is an important property.\
+\
+Checks the average number generator. The java average ends up around the median for java\'92s random number generator. This indicates that it is a decent random number generator. The bad random number generator is always returning 1, so the the average ends up being 1 and the numbers are not really random.\
+\
+2. It takes a lot longer to generate ten million random numbers using JavasRandomNumberGenerator than using PoorRandomNumberGenerator. Why?\
+\
+Java\'92s random number generator is doing much more work to actually generate random numbers, where the poor random number generator is just returning 1 every time. Which doesn\'92t take much \'93effort\'94. Therefore, the time taken to return 1 is less than that to generate a random number. \
+\
+\
+3. The "Number of Zeros after 10000 tries" refers to the number of integers between 0 and 10000 (exclusive) that were not generated in 10000 tries. For PoorRandomNumberGenerator this value is 9999. Why?\
+\
+The poor random number generator is always returning 1. That means it is not generating any other numbers between 0 -10,000. The count ends up being 10,000 - 1 == 9999.\
+\
+\
+4. What does the number of integers between 0 and 10000 (exclusive) that were not generated in 10000 tries tell us about the RNG? Does JavasRandomNumberGenerator generate every integer between 0 and 10000 (exclusive) in 10000 tries?\
+\
+No it doesn\'92t, it gets about 6,320 numbers out of 10,000. Java\'92s random number generator number of zeros after 10,000 tries is 3680. Which means that hit 6,320 numbers between 0 - 10,000. That means it doesn\'92t generate almost a third of the possible numbers that could be generated in 10,000 tries. Eventually it gets to every number around 91,605 tries.\
+\
+\
+\
+\
+\
+\
+\
+5. The "Number of odd_even pairs" refers to the number of times an odd number is followed by an even number in the generated sequence of integers. What is a good value for this number?\
+\
+A good value for that number is around 2,500. That is a fourth of the 10,000 max value. That means that the number of pair combinations are split up evenly. Javas random number generator does this well as these are the outputs:\
+\
+Number of odd_even  pairs: 2537\
+Number of odd_odd   pairs: 2496\
+Number of even_odd  pairs: 2538\
+Number of even_even pairs: 2428\
+\
+All pair combos end up being about a 1/4 of the total, which is an ideal distribution. \
+\
+\
+\
+6. CheckRandomNumberGenerator checks that given the same seed, the RNG produces the same sequence of integers. What is an advantage of this behavior? What is a disadvantage?\
+\
+\
+The advantage of this is that during test that involve find the average, the test can always be run on the same set of numbers. This will return more consistent results for every test, and can tell you the time it takes for a function to run on a very specific array or list. \
+\
+One disadvantage is that running tests on the same number array can be a little bias. If you want to avoid this you could use numbers that do not return the same every time. \
+\
+7. For what properties did your RNG perform better than PoorRandomNumberGenerator?\
+\
+Everything but the repeatability on the same seed. The PoorRandomNumberGenerator only returns one. One is repeatable, which makes repeatability true, but it doesn\'92t give anything else, so the test becomes much worse. \
+\
+\
+8. Why are RNGs that use computational algorithms considered "pseudorandom"? \
+\
+The numbers are not actually random. They are completely determined by the initial value (seed). \
+\
+}

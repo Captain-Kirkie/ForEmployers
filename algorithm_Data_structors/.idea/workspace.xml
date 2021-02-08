@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57446e9a-521b-4acd-91ef-24ce43755112" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assignment06/ChainingHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment06/HashFunctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment06/Set.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment06/analysis_doc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AfterRemoveAll.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BeforeRemoveAll.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CS6012-Fall2020.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ComboList.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../First_add" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorld.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HelloWorldAfter.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JefTestBefore.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JeffTestAfter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JeffTestAfter.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JeffTestAfter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LordOfRingsFile.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewIntSmallTree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NewIntSmallTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STRINGTREE2.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../STRINGTREE2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmallIntTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../afterClear.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../afterClear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../afterTestIntTree.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../before.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../beforeClear.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../beforeClear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../combolist.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dictionaryTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../expressionTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../expressionTree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloWorldAfter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../helloWorldBefore.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../intTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../intTree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leftAfter.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leftAfter.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leftSide.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leftTest.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noParkPeople.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noParkPeople.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../one.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../removeTree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../removeTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../removeTree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rightSide.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sizeTree.dot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sizeTree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab06/BetterRandomNumberGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/lab06/BetterRandomNumberGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stringTree.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kfGBOBhzmfnoJJW2g77akTUVuO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57446e9a-521b-4acd-91ef-24ce43755112" name="Default Changelist" comment="" />
+      <created>1606084095969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606084095969</updated>
+      <workItem from="1606084097153" duration="18000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

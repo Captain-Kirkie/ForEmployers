@@ -1,0 +1,57 @@
+When you are satisfied that your program is correct, write a detailed analysis
+document. The analysis document is 40% of your assignment grade. Ensure that
+your analysis document addresses the following.
+
+Note that if you use the same seed to a Java Random object, you will get the
+same sequence of random numbers (we will cover this more in a lab soon). Use
+this fact to generate the same permuted list every time, after switching
+threshold values or pivot selection techniques in the experiments below. (i.e.,
+re-seed the Random with the same seed)
+
+1. Who are your team members?
+Kirk Hietpas
+Braden Potter
+
+2. Mergesort Threshold Experiment: Determine the best threshold value for which
+mergesort switches over to insertion sort. Your list sizes should cover a range
+of input sizes to make meaningful plots, and should be large enough to capture
+accurate running times. To ensure a fair comparison, use the same set of
+permuted-order lists for each threshold value. Keep in mind that you can't
+resort the same ArrayList over and over, as the second time the order will have
+changed. Create an initial input and copy it to a temporary ArrayList for each
+test (but make sure you subtract the copy time from your timing results!). Use
+the timing techniques we already demonstrated, and be sure to choose a large
+enough value of timesToLoop to get a reasonable average of running times. Note
+that the best threshold value may be a constant value or a fraction of the list
+size. Plot the running times of your threshold mergesort for five
+different threshold values on permuted-order lists (one line for each threshold
+value). In the five different threshold values, be sure to include the
+threshold value that simulates a full mergesort, i.e., never switching to
+insertion sort (and identify that line as such in your plot).
+
+3. Quicksort Pivot Experiment: Determine the best pivot-choosing strategy for
+quicksot. (As in #2, use large list sizes, the same set of permuted-order lists
+for each strategy, and the timing techniques demonstrated before.) Plot the
+running times of your quicksort for three different pivot-choosing strategies
+on permuted-order lists (one line for each strategy).
+
+4. Mergesort vs. Quicksort Experiment: Determine the best sorting algorithm for
+each of the three categories of lists (best-, average-, and worst-case). For
+the mergesort, use the threshold value that you determined to be the best. For
+the quicksort, use the pivot-choosing strategy that you determined to be the
+best. Note that the best pivot strategy on permuted lists may lead to O(N^2)
+performance on best/worst case lists. If this is the case, use a different
+pivot for this part. As in #2, use large list sizes, the same list sizes for
+each category and sort, and the timing techniques demonstrated before. Plot
+the running times of your sorts for the three categories of lists. You may plot
+all six lines at once or create three plots (one for each category of lists).
+
+5. Do the actual running times of your sorting methods exhibit the growth rates
+you expected to see? Why or why not? Please be thorough in this explanation.
+
+Team members are encouraged to collaborate on the answers to these questions
+and generate graphs together. However, each member must write and submit
+his/her own solutions.
+
+Upload your solution (.pdf only) through Canvas.
+
