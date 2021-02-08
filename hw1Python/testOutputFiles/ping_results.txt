@@ -1,0 +1,3 @@
+This is the Average 17.02049586776859 m/s
+This is the Min 13.191 m/s
+This is the Average - min 3.829495867768591 m/s
