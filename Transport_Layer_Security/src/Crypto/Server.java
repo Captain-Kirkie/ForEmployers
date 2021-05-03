@@ -87,7 +87,7 @@ public class Server extends TLS {
         } else {
             System.out.println("Client digital signature verified!!!");
         }
-        // garguedas@backcountry.com
+        
 
         // calculate shared secret
         computeDHSharedSecret(this.DHPubKey, clientPubDHKey);
