@@ -1,7 +1,0 @@
-Good luck on Assignment 6!
-
-Binary search trees are great data structures.  Searches are super fast (if the 
-order in which the BST is constructed is not too bad).  Be careful, insertions and 
-deletions can be tricky.
-
-danny
