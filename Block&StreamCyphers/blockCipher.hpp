@@ -19,7 +19,6 @@ std::array<uint8_t, 256> fisherYatesArrayShuffled(std::array<uint8_t, 256> arr);
 
 void swap(uint8_t &a, uint8_t &b);
 
-//std::vector<<std::array<uint8_t, 256>> buildEightShuffledTables(std::array<uint8_t, 256> firstTable);
 std::vector<std::array<uint8_t, 256> > buildEightShuffledTables(std::array<uint8_t, 256> firstTable);
 
 std::array<uint8_t, 8> createKey(const std::string &password, std::array<uint8_t, 8> &key);
@@ -27,8 +26,6 @@ std::array<uint8_t, 8> createKey(const std::string &password, std::array<uint8_t
 void printSize256Array(std::array<uint8_t, 256> &arr);
 
 void printSize8Array(std::array<uint8_t, 8> &arr);
-
-//void printVectorOfTables(std::vector<std::array<uint8_t, 256>> &vectorOfTables);
 
 void CHARprintSize8Array(std::array<uint8_t, 8> &arr);
 
@@ -43,6 +40,7 @@ void populateBlock(std::array<uint8_t, 8> &block, std::string &message);
 void XORBlock(std::array<uint8_t, 8> &block, std::array<uint8_t, 8> &key);
 
 void printSize8ArrayHEX(std::array<uint8_t, 8> &arr);
+
 int findIndex(std::array<uint8_t, 256> table, uint8_t c);
 
 std::string convertBlockToString(std::array<uint8_t, 8> &block);
