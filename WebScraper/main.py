@@ -13,9 +13,7 @@ import mechanicalsoup
 import smtplib
 from email.message import EmailMessage
 
-password = "bottleNeck2021"
-email = "kirktest93@gmail.com"
-google_password = "eiuzcjohoagsvnsk"
+
 
 company_career_dict = {"BambooHR": "https://company.bamboohr.com/jobs/?source=bamboohr",
                        "Adobe": "https://adobe.wd5.myworkdayjobs.com/external_experienced",
