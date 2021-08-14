@@ -89,6 +89,7 @@ async function main(infection_data, mortality_data) {
   const path = d3.geoPath();
 
   renderMap(null, svg, map_data, path, statePointerLabel); // first time rendering
+  createLegend();
 }
 
 //***************************** */
