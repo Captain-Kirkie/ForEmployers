@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/goals_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="201dp"
+        android:text="@string/goals"
+        android:textColor="@color/cream"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/goals_gainLoseHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/i_want_to"
+        android:textColor="@color/cream"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goals_header" />
+
+    <RadioGroup
+        android:id="@+id/goals_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goals_header"
+        app:layout_constraintTop_toBottomOf="@+id/goals_gainLoseHeader">
+
+        <RadioButton
+            android:id="@+id/goals_radio_lose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lose_weight"
+            android:textColor="@color/cream"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/goals_radio_gain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gain_weight"
+            android:textColor="@color/cream"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/goals_radio_maintain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maintain_weight"
+            android:textColor="@color/cream"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/goals_button_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="133dp"
+        android:text="@string/submit_goals"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/goals_radioGroup" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

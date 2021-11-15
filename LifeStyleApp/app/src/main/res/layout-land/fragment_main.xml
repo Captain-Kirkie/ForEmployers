@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment">
+
+    <TextView
+        android:id="@+id/textview_top"
+        android:layout_width="0dp"
+        android:layout_height="109dp"
+        android:background="#22314A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_goals"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/goals"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_top" />
+
+    <Button
+        android:id="@+id/button_weather"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/weather"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toEndOf="@+id/button_goals"
+        app:layout_constraintTop_toBottomOf="@id/textview_top" />
+
+    <Button
+        android:id="@+id/button_diet"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/diet"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_goals" />
+
+    <Button
+        android:id="@+id/button_hikes"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/hikes"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toEndOf="@+id/button_diet"
+        app:layout_constraintTop_toBottomOf="@id/button_weather" />
+
+    <Button
+        android:id="@+id/button_user_info"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/userInfo"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toEndOf="@+id/button_weather"
+        app:layout_constraintTop_toBottomOf="@+id/textview_top" />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:lineSpacingExtra="4dp"
+        android:text="@string/welcome"
+        android:textColor="#DFD8CB"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textview_top" />
+
+    <TextView
+        android:id="@+id/user_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="18dp"
+        android:contentDescription="@string/users_full_name"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/john_doe"
+        android:textColor="#DFD8CB"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textview_top"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_text" />
+
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:textColor="#DFD8CB"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_diet"
+
+      />
+
+    <ImageView
+        android:id="@+id/blankUserImage"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/blank_user_icon"
+        android:src="@drawable/ic_user"
+        android:tint="#DFD8CB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    these are temporary test views that can look better-->
+
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="73dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:contentDescription="@string/blank_user_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bmi_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:hint="bmi"
+        app:layout_constraintStart_toEndOf="@+id/button_user_info"
+        app:layout_constraintTop_toTopOf="@+id/button_user_info" />
+
+    <TextView
+        android:id="@+id/weight_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="weight"
+        app:layout_constraintStart_toStartOf="@+id/bmi_textview"
+        app:layout_constraintTop_toBottomOf="@+id/bmi_textview" />
+
+    <TextView
+        android:id="@+id/goal_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="goal"
+        app:layout_constraintStart_toStartOf="@+id/weight_textview"
+        app:layout_constraintTop_toBottomOf="@id/weight_textview" />
+
+    <TextView
+        android:id="@+id/dob_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="dob"
+        app:layout_constraintStart_toStartOf="@+id/goal_textview"
+        app:layout_constraintTop_toBottomOf="@+id/goal_textview" />
+
+    <TextView
+        android:id="@+id/gender_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="gender"
+        app:layout_constraintStart_toStartOf="@+id/dob_textview"
+        app:layout_constraintTop_toBottomOf="@id/dob_textview" />
+
+    <Button
+        android:id="@+id/button_steps"
+        android:layout_width="145dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="38dp"
+        android:backgroundTint="#721B29"
+        android:fontFamily="@font/roboto"
+        android:letterSpacing=".25"
+        android:text="@string/steps"
+        android:textColor="#DFD8CB"
+        app:layout_constraintStart_toEndOf="@+id/button_hikes"
+        app:layout_constraintTop_toBottomOf="@+id/button_user_info" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

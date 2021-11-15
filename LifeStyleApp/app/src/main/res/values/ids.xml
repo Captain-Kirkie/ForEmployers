@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <item name="linearLayout" type="id">linearLayout</item>-->
+<!--    <item name="flWeatherDay1" type="id">flWeatherDay1</item>-->
+<!--    <item name="flWeatherDay2" type="id">flWeatherDay2</item>-->
+<!--    <item name="flWeatherDay3" type="id">flWeatherDay3</item>-->
+<!--    <item name="flWeatherDay4" type="id">flWeatherDay4</item>-->
+    <item name="textView_Day" type="id" />
+
+
+</resources>

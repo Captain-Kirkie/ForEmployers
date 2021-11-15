@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="users_full_name">Users Full Name</string>
+    <string name="john_doe">John Doe</string>
+    <string name="welcome">WELCOME</string>
+    <string name="goals">goals</string>
+    <string name="weather">weather</string>
+    <string name="diet">diet</string>
+    <string name="hikes">hikes</string>
+    <string name="blank_user_icon">blank user icon</string>
+    <string name="let_s_get_started">let\'s get started</string>
+</resources>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:id="@+id/weight_change_goal_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Desired weekly weight change:"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="@+id/activity_radio_group"
+        app:layout_constraintStart_toStartOf="@+id/activity_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/activity_radio_group" />
+
+    <TextView
+        android:id="@+id/calorie_calc_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Calorie Calculator"
+        android:textSize="18sp"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Calorie Calculator" />
+
+    <TextView
+        android:id="@+id/height_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Height(inches)"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toStartOf="@+id/height_et"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calorie_calc_title"
+        tools:text="Height(inches)" />
+
+    <TextView
+        android:id="@+id/weight_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Weight"
+        android:textColor="@color/cream"
+        app:layout_constraintStart_toStartOf="@+id/height_tv"
+        app:layout_constraintTop_toBottomOf="@+id/height_tv"
+        tools:text="Weight" />
+
+    <EditText
+        android:id="@+id/weight_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/cream"
+        app:layout_constraintBottom_toBottomOf="@+id/weight_tv"
+        app:layout_constraintStart_toStartOf="@+id/height_et"
+        app:layout_constraintTop_toTopOf="@+id/weight_tv" />
+
+    <EditText
+        android:id="@+id/height_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/cream"
+        app:layout_constraintBottom_toBottomOf="@+id/height_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toEndOf="@+id/height_tv"
+        app:layout_constraintTop_toTopOf="@+id/height_tv" />
+
+    <Button
+        android:id="@+id/calculate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:text="Calculate"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="@+id/desired_weight_change_et"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="@+id/desired_weight_change_et"
+        app:layout_constraintTop_toBottomOf="@+id/desired_weight_change_et" />
+
+    <TextView
+        android:id="@+id/activity_level_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Describe your daily activity levels:"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="@+id/gender_radio_group"
+        app:layout_constraintStart_toStartOf="@+id/gender_radio_group"
+        app:layout_constraintTop_toBottomOf="@+id/gender_radio_group" />
+
+    <RadioGroup
+        android:id="@+id/activity_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_level_tv">
+
+
+        <RadioButton
+            android:id="@+id/active_radio_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Active"
+            android:textColor="@color/cream"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/sedentary_radio_button"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="Sedentary"
+            android:textColor="@color/cream"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/desired_weight_change_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="numberSigned"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="@+id/weight_change_goal_tv"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="@+id/weight_change_goal_tv"
+        app:layout_constraintTop_toBottomOf="@+id/weight_change_goal_tv" />
+
+    <TextView
+        android:id="@+id/calorie_rec_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
+        android:textColor="@color/cream"
+        app:layout_constraintBottom_toTopOf="@+id/calculate_button"
+        app:layout_constraintEnd_toEndOf="@+id/desired_weight_change_et"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/desired_weight_change_et"
+        app:layout_constraintTop_toBottomOf="@+id/desired_weight_change_et"
+        app:layout_constraintVertical_bias="0.151"
+        tools:text="Some recommendation..." />
+
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Age"
+        android:textColor="@color/cream"
+        app:layout_constraintStart_toStartOf="@+id/weight_tv"
+        app:layout_constraintTop_toBottomOf="@+id/weight_tv" />
+
+    <EditText
+        android:id="@+id/age_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/cream"
+        app:layout_constraintBottom_toBottomOf="@+id/age_tv"
+        app:layout_constraintEnd_toEndOf="@+id/weight_et"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/weight_et"
+        app:layout_constraintTop_toTopOf="@+id/age_tv" />
+
+    <RadioGroup
+        android:id="@+id/gender_radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_tv">
+
+
+        <RadioButton
+            android:id="@+id/male_radio_button"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/male"
+            android:textColor="@color/cream"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/female_radio_button"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/roboto"
+            android:text="@string/female"
+            android:textColor="@color/cream"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/gender_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Gender"
+        android:textColor="@color/cream"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_et" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/bmiTV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:text="BMI"-->
+<!--        app:layout_constraintEnd_toStartOf="@+id/bmiValueTV"-->
+<!--        tools:layout_editor_absoluteY="989dp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/bmiValueTV"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:layout_editor_absoluteX="201dp"-->
+<!--        tools:layout_editor_absoluteY="989dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
