@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">LifeStyleApp</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <!--    <string name="hello_first_fragment">hello this is a frament</string>-->
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="users_full_name">Users Full Name</string>
+    <string name="john_doe">John Doe</string>
+    <string name="welcome">WELCOME</string>
+    <string name="goals">goals</string>
+    <string name="weather">weather</string>
+    <string name="diet">diet</string>
+    <string name="hikes">hikes</string>
+    <string name="blank_user_icon">blank user icon</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="let_s_get_started">let\'s get started</string>
+    <string name="male">Male</string>
+    <string name="height">height</string>
+    <string name="lbs">lbs.</string>
+    <string name="height_in_feet">\'height in feet\'</string>
+    <string name="in">in.</string>
+    <string name="female">Female</string>
+    <string name="first_name">first name</string>
+    <string name="last_name">last name</string>
+    <string name="name">name</string>
+    <string name="upload_profile_pic">upload profile pic</string>
+    <string name="ft">ft.</string>
+    <string name="birthdate">birthdate</string>
+    <string name="weight">weight</string>
+    <string name="gender">gender</string>
+    <string name="birthdate_in_month_number_day_number_year_number_in_full_four_digits">\'birthdate in month number, day number, year number in full four digits\'</string>
+    <string name="height_in_inches_after_nearest_foot">\'height in inches after nearest foot\'</string>
+    <string name="weight_in_pounds">\'weight in pounds\'</string>
+    <string name="feet">feet</string>
+    <string name="inches">inches</string>
+    <string name="pounds">pounds</string>
+
+    <!--    location string-->
+    <string name="latitude">40.76078</string>
+    <string name="longitude">-111.89105</string>
+
+    <!--    this is the api key used to access open weather-->
+    <string name="API_KEY">4d6a6762b6df2e8c475a8ca94be587d7</string>
+    <string name="userInfoFragment_label">userInfoNav</string>
+    <string name="userInfo">User Info</string>
+    <string name="submit_user_info">Submit</string>
+    <string name="take_picture">take picture</string>
+    <string name="user_profile_image">user profile image</string>
+    <string name="lose_weight">lose weight</string>
+    <string name="gain_weight">gain weight</string>
+    <string name="maintain_weight">maintain weight</string>
+    <string name="i_want_to">I want to</string>
+    <string name="submit_goals">submit goals</string>
+    <string name="your_stats">Your Stats</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="user_name">User Name</string>
+    <string name="steps">steps</string>
+    <string name="SecretAccessKey">ftznfk4GgjG4QKrdQI2f9cq5laZxQgzbPSoXsPml</string>
+    <string name="AccessKeyID">AKIAY3PT5OPVX7ZQQRN7</string>
+    <string name="UserName">lifestyle_app_user</string>
+
+
+
+</resources>

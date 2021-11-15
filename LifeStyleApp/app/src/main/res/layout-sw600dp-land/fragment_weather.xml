@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".fragments.WeatherFragment"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-23dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="@string/weather"
+        android:textColor="@color/cream"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weater_textViewCurrent"
+        android:layout_width="match_parent"
+        android:layout_height="122dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/darkRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView_Day"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textColor="@color/cream"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_tvCurrent" />
+
+    <TextView
+        android:id="@+id/weather_tvCurrent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Current Conditions"
+        android:textColor="@color/cream"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/weater_textViewCurrent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="89dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_thin"
+        android:textColor="@color/cream"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Day"
+        app:layout_constraintTop_toBottomOf="@+id/weather_tvCurrent" />
+
+
+    <ImageView
+        android:id="@+id/weather_currentConditionsIcon"
+        android:layout_width="65dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:tint="@color/cream"
+        app:layout_constraintStart_toEndOf="@+id/textView_Day"
+        app:layout_constraintTop_toBottomOf="@+id/weather_tvCurrent"
+        tools:src="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/weather_4DayForecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="4-Day Forecast"
+        android:textColor="@color/cream"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weater_textViewCurrent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_4dayWeather"
+        android:layout_width="0dp"
+        android:layout_height="211dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/weather_4DayForecast" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

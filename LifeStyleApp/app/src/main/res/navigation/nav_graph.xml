@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.lifestyleapp.fragments.MainFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_main">
+        <!--      mainFrag -> weatherFrag   -->
+        <action
+            android:id="@+id/action_MainFragment_to_WeatherFragment"
+            app:destination="@id/WeatherFragment" />
+<!--        mainFrag -> userFrag    -->
+        <action
+            android:id="@+id/action_MainFragment_to_UserFragment"
+            app:destination="@id/UserFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/WeatherFragment"
+        android:name="com.example.lifestyleapp.fragments.WeatherFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_weather">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UserFragment"
+        android:name="com.example.lifestyleapp.userInfoFragment"
+        android:label="@string/userInfoFragment_label"
+        tools:layout="@layout/fragment_user_info">
+
+        <action
+            android:id="@+id/action_UserFragment_to_MainFragment"
+           app:destination="@id/FirstFragment" /> <!-- this brings us back to first fragment-->
+    </fragment>
+</navigation>
