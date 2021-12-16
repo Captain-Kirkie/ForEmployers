@@ -64,7 +64,6 @@ struct QuadTree
                 auto west = points[0 .. $ - east.length]; // get left
 
                 // now that i have east and west, i can split into NE, NW, SE, SW
-                // not sure if these are right
                 auto NE = east.partitionByDimension!1(midY);
                 auto SE = east[0 .. $ - NE.length];
                 auto NW = west.partitionByDimension!1(midY);
